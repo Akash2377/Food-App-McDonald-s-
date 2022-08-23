@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McDonald's: Burgers, Fries & More. Quality Ingredients.</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/584aebd994.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        style="margin: 0 -80px 0 50px"
+        src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg"
+        alt=""
+      />
+      <div>
+        <div>
+          <div>
+            <h4 class="TNB">
+              Language
+              <i class="fa-solid fa-angle-down"></i>
+            </h4>
+            <h4 class="TNB">Sign Up for Email</h4>
+            <h4 class="TNB">Careers</h4>
+          </div>
+          <div>
+            <h4>
+              <i class="fa-solid fa-magnifying-glass"
+                ><span style="margin-right: 8px"></span></i
+              >Search
+            </h4>
+            <h4>
+              <i class="fa-solid fa-location-dot" style="color: red"
+                ><span style="margin-right: 8px"></span></i
+              >Change your Location
+            </h4>
+            <button id="order" onclick="openPopUp()">Order Now</button>
+          </div>
+        </div>
+        <div style="margin-left: 120px">
+          <h4>
+            Our Menu
+            <i class="fa-solid fa-angle-down"></i>
+          </h4>
+          <h4>Download App</h4>
+          <h4>MyMcDonald's Rewards</h4>
+          <h4>Exclusive Deals</h4>
+          <h4>About Our Food</h4>
+          <h4>Locate</h4>
+        </div>
+      </div>
+    </nav>
+    <h1>Exclusive McDonald's Deals</h1>
+    <div id="slideshow"></div>
+    <!-- Order popup menu -->
+    <section id="popupSection">
+      <div id="popupDiv">
+        <div>
+          <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
+          <div id="popupDiv-container"></div>
+          <div><button id="PlaceOrder">ORDER</button></div>
+        </div>
+      </div>
+    </section>
+    <!-- end of order popup -->
+    <!-- Order popup menu -->
+    <section id="popupSection2">
+      <div id="popupDiv2">
+        <div>
+          <i
+            class="fa-solid fa-xmark"
+            onclick="  deleteFromLocal(orderLIST)"
+          ></i>
+          <p id="OrderT">
+            Thank you for Order <br />
+            Enjoy Your Day
+          </p>
+          <p id="orderID"></p>
+          <div id="popupDiv-container2"></div>
+          <div><button id="closeorder">OK</button></div>
+        </div>
+      </div>
+    </section>
+    <!-- end of order popup -->
+  </body>
+</html>
+<script src="./index.js"></script>

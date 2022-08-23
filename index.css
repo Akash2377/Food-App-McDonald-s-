@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  padding-top: 20px;
+  height: 90px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+nav > div:last-child {
+  width: 100%;
+}
+nav > div > div {
+  display: flex;
+  width: 100%;
+}
+h4 {
+  margin: 10px 30px;
+  color: rgba(22, 20, 20, 0.788);
+}
+nav > div > div > div {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+nav > div > div > div > h4 {
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}
+#order {
+  height: 40px;
+  padding: 0 30px;
+  margin-top: 5px;
+  border: none;
+  font-weight: bolder;
+  background-color: #ffbc0d;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+#slideshow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+#slideshow > img {
+  width: 70%;
+  height: 400px;
+}
+#popupSection,
+#popupSection2 {
+  display: none;
+}
+#popupDiv,
+#popupDiv2 {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.295);
+}
+#popupDiv > div,
+#popupDiv2 > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 450px;
+  padding: 10px;
+  background-color: white;
+}
+#popupDiv > div > i,
+#popupDiv2 > div > i {
+  align-self: flex-end;
+  cursor: pointer;
+}
+#popupDiv > div > div:last-child,
+#popupDiv2 > div > div:last-child {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+#popupDiv button,
+#popupDiv2 button {
+  height: 40px;
+  padding: 0 30px;
+  margin-top: 20px;
+  border: none;
+  font-weight: bolder;
+  background-color: #ffbc0d;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+#popupDiv-container,
+#popupDiv-container2 {
+  width: 100%;
+  height: 400px;
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  overflow: scroll;
+  overflow-x: hidden;
+}
+#popupDiv-container > div > img,
+#popupDiv-container2 > div > img {
+  display: block;
+  margin: auto;
+}
+#popupDiv-container > div > h4,
+#popupDiv-container2 > div > h4 {
+  text-align: center;
+}
+#OrderT {
+  text-align: center;
+  color: crimson;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: larger;
+}
+#orderID {
+  text-align: end;
+  color: gray;
+}
+#closeorder {
+  justify-content: center;
+}
